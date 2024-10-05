@@ -163,7 +163,7 @@
 <!-- sort button section start -->
 
 <section class="flex justify-between items-center mb-10">
-    <h1 class="text-2xl font-bold ">Best Deal For you</h1>
+    <h1 class="md:text-2xl font-bold ">Best Deal For you</h1>
     <button class="bg-color1 py-3 px-5 text-white rounded-2xl mt-7 font-semibold">
         Sort by Price
     </button>
@@ -171,13 +171,138 @@
 
 <!-- sort button section end -->
 
+
+
+<!-- main card section start -->
+
+<section>
+    <div class="grid grid-cols-12  gap-5">
+
+        <div class="lg:col-span-9 col-span-12">
+
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-2 items-center justify-center" id="petCard_section">
+                
+             
+                    <div class="card card-compact bg-base-100 w-64 shadow-xl border-2">
+                        <figure>
+                          <div>
+                            <img
+                            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" class="p-2 rounded-2xl"
+                            alt="Shoes" /></div>
+                        </figure>
+
+                        <div class="card-body">
+                          <h2 class="card-title font-semibold">Mister Tartosh</h2>
+
+                          <div class="flex items-center gap-2">
+                            <img src="https://img.icons8.com/?size=24&id=115265&format=png" alt="">
+                            <h1 class="font-bold">Breed: Golder retriever</h1>
+                          </div>
+                          
+                          <div class="flex items-center gap-2">
+                            <img src="https://img.icons8.com/?size=24&id=85102&format=png" alt="">
+                            <h1 class="font-bold">Birth: 2024</h1>
+                          </div>
+
+                          <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-venus"></i>
+                            <h1 class="font-bold">Gender: Female</h1>
+                          </div>
+                          <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            <h1 class="font-bold">Price : 199$</h1>
+                          </div>
+
+                          <hr>
+
+
+                          <div class="flex items-center justify-center gap-2">
+                            <button class="border py-3 px-4 rounded-xl">
+                                <img src="https://img.icons8.com/?size=32&id=33481&format=png" alt="">
+                            </button >
+                            <button class="border py-3 px-4 rounded-xl text-color1 font-bold">
+                                Adopt
+                            </button>
+                            <button class="border py-3 px-4 rounded-xl text-color1 font-bold">
+                                Details
+                            </button>
+                          </div>
+                          
+                        </div>
+                      </div>
+
+               
+            </div>
+           
+        </div>
+
+        <div class="lg:col-span-3">
+            <div class="grid grid-cols-2 gap-4 border-2 rounded-2xl py-7 px-5">
+                <img src="./images/1998592.png" alt="">
+                <img src="./images/1998592.png" alt="">
+                <img src="./images/1998592.png" alt="">
+                <img src="./images/1998592.png" alt="">
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- main card section end -->
+
     
 </main>
 
 
-<footer>
+<footer class="footer bg-black text-base-content p-10 mt-28">
+    <nav>
+        <div class="flex gap-3">
+            <img src="./images/logo.webp" alt="">
+            <h1 class="text-2xl font-bold">Peddy</h1>
+        </div>
 
-</footer>
+      <h1 class="text-slate-500 font-semibold">Location: av. Washington 165, NY CA 54003
+        <br>
+        Phone: +31 85 964 47 25
+        <br>
+        Email: info@yourdomain.com <br>
+        Openings hours: 9.00 AM - 5.00 PM</h1>
+
+
+        <div class="flex gap-4 items-center">
+            <img src="https://img.icons8.com/?size=48&id=uLWV5A9vXIPu&format=png" alt="">
+            <img src="https://img.icons8.com/?size=48&id=ZNMifeqJbPRv&format=png" alt="">
+            <img src="https://img.icons8.com/?size=48&id=19318&format=png" alt="">
+            <img src="https://img.icons8.com/?size=48&id=Xy10Jcu1L2Su&format=png" alt="">
+        </div>
+    </nav>
+    <nav class="text-slate-500">
+      <h6 class="footer-title">Useful Links</h6>
+      <a class="link link-hover">Home</a>
+      <a class="link link-hover">About us</a>
+      <a class="link link-hover">Foundation</a>
+      <a class="link link-hover">Contact</a>
+    </nav>
+    <!-- <nav>
+      <h6 class="footer-title">Legal</h6>
+      <a class="link link-hover">Terms of use</a>
+      <a class="link link-hover">Privacy policy</a>
+      <a class="link link-hover">Cookie policy</a>
+    </nav> -->
+    <form>
+      <h6 class="footer-title text-slate-500">Drop a Message</h6>
+      <fieldset class="form-control w-80">
+        <div class="join">
+          <input
+            type="text"
+            placeholder="Enter Your Email"
+            class="py-3 px-7 rounded-2xl bg-gray-700 text-slate-600" />
+        </div>
+        
+      </fieldset>
+      <button class="bg-color1 py-3 px-20 rounded-2xl text-slate-600">Subscribe</button>
+    </form>
+  </footer>
 
 
 <script src="script.js"></script>
