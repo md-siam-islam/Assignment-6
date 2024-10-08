@@ -22,3 +22,10 @@
   border-color:rebeccapurple;
   color:red
 }
+
+
+#adoptBtn:disabled {
+  background-color: #ccc; 
+  color: #666;
+  cursor: not-allowed;
+}

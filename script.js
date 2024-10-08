@@ -14,7 +14,7 @@ const displayCategories = (data) => {
 
     buttonContent.innerHTML = `
         
-        <button id = "BTN-${item.id}" onclick = "clickCard('${item?.category}')" class="border-2 py-4 px-14 rounded-3xl flex items-center justify-center">
+        <button id = "" onclick = "clickCard('${item?.category}')" class="border-2 py-4 px-14 rounded-3xl flex items-center justify-center">
                     <div class="w-10 h-10">
                         <img src="${item.category_icon}" alt="" class="w-full h-full">
                     </div>
@@ -28,6 +28,12 @@ const displayCategories = (data) => {
 
 const clickCard = (category) => {
   const cardContainer = document.getElementById("petCard_section");
+// button active section start
+  let buttons = document.querySelectorAll('button');
+  buttons.forEach(button => button.classList.remove('active'));
+  let clickedButton = event.currentTarget;
+  clickedButton.classList.add('active');
+// button active section start
 
   
   cardContainer.innerHTML = `<span class="loading loading-bars loading-lg"></span>`;
@@ -249,11 +255,17 @@ function closeModal(id) {
   const cardIndex = id - 1;
   const allCards = document.querySelectorAll(".card");
   const adoptedPet = allCards[cardIndex];
-  const adoptButton = adoptedPet.childNodes[3].childNodes[13].childNodes[1];
-  console.log(adoptButton);
-  adoptButton.setAttribute("disabled", true)
+
+  const adoptButton = adoptedPet.querySelector('#adoptBtn'); 
+
  
+  if (adoptButton) {
+    adoptButton.setAttribute("disabled", true); 
+  } else {
+    console.error("Adopt button not found!");
+  }
 }
+  
 
 const loadModal = () => {
   fetch("https://openapi.programming-hero.com/api/peddy/pets")
@@ -279,7 +291,6 @@ const sortByPrice = () => {
     })
     .then((data) => {
       const sortedPets = data.pets.sort((a, b) => b.price - a.price);
-      console.log(sortedPets);
       displayCard(sortedPets);
     });
 };
