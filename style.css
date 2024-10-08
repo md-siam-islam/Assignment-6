@@ -14,3 +14,11 @@
 .hidden {
   display: none;
 }
+
+
+
+
+.active{
+  border-color:rebeccapurple;
+  color:red
+}

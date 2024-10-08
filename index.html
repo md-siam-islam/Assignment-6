@@ -150,14 +150,9 @@
 
       <!-- sort button section start -->
 
-      <section
-        class="flex justify-between items-center mb-10 flex-col md:flex-row"
-      >
-        <h1 class="md:text-2xl font-bold">Best Deal For you</h1>
-        <button
-          onclick="sortByPrice()"
-          class="bg-color1 py-3 px-5 text-white rounded-2xl mt-7 font-semibold"
-        >
+      <section class="flex justify-between items-center mb-10 flex-col md:flex-row" >
+        <div><h1 class="md:text-2xl font-bold">Best Deal For you</h1></div>
+        <button onclick="sortByPrice()" class="bg-color1 py-3 px-5 text-white rounded-2xl mt-7 font-semibold">
           Sort by Price
         </button>
       </section>
@@ -168,46 +163,67 @@
 
       <section>
         <div class="grid grid-cols-12 gap-5">
-          <div class="lg:col-span-9 grid-cols-12">
-            <div
-              class="grid lg:grid-cols-3 grid-cols-1 gap-2 items-center justify-center"
-              id="petCard_section">
-              
+          <!-- Uporer card ta -->
+          <div class="lg:col-span-9 md:col-span-12 sm:col-span-8 col-span-12 flex items-center justify-center">
+            <div class="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-2 grid-cols-1 gap-2" id="petCard_section">
             </div>
           </div>
+      
+          <!-- Nicher div ta -->
+          <div class="lg:col-span-3 md:col-span-12 sm:col-span-4 col-span-12">
+            <div class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-4 border-2 rounded-2xl lg:py-7 lg:px-5" id="inputImg">
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+      
 
-          <div class="lg:col-span-3">
+      <!-- <section>
+        <div class="grid grid-cols-12 gap-5">
+          <div class="lg:col-span-9 cols-span-8 items-center justify-center">
             <div
-              class="grid lg:grid-cols-2 grid-cols-1 gap-4 border-2 rounded-2xl py-7 px-5"
+              class="grid lg:grid-cols-3 grid-cols-1 gap-2 items-center justify-center"
+              id="petCard_section"
+            ></div>
+          </div>
+
+          <div class="lg:col-span-3 col-span-4">
+            <div
+              class="grid lg:grid-cols-2 gap-4 border-2 rounded-2xl lg:py-7 lg:px-5"
               id="inputImg"
             ></div>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- main card section end -->
     </main>
-
 
     <dialog id="my_modal_1" class="modal">
       <div
         class="card card-compact bg-base-100 w-96 shadow-xl border-2"
         id="all_container"
       >
-        <div id="modalContant">
-          
-        </div>
+        <div id="modalContant"></div>
       </div>
     </dialog>
 
-
     <dialog id="castomModal" class="modal">
       <div class="modal-box">
-        <h1 class="text-2xl mb-7 font-bold text-gray-400">Congrats</h1>
-        <h2>Adoption Process is start of your pet</h2>
+        <div class="flex flrx-col justify-center items-center">
+          <img
+            src="https://img.icons8.com/?size=64&id=43627&format=png"
+            alt=""
+          />
+        </div>
+        <h1 class="text-4xl mb-7 font-extrabold">Congrats</h1>
+        <h2 class="text-2xl font-bold">
+          Adoption Process is start of your pet
+        </h2>
         <p class="p" id="countdownText">3</p>
         <div class="modal-action">
           <form method="dialog">
-
             <button class="btn">Close</button>
           </form>
         </div>
@@ -256,7 +272,7 @@
         <a class="link link-hover">Foundation</a>
         <a class="link link-hover">Contact</a>
       </nav>
-     
+
       <form>
         <h6 class="footer-title text-slate-500">Drop a Message</h6>
         <fieldset class="form-control w-80">

@@ -14,7 +14,7 @@ const displayCategories = (data) => {
 
     buttonContent.innerHTML = `
         
-        <button onclick = "clickCard('${item?.category}')" class="border-2 py-4 px-14 rounded-3xl flex items-center justify-center">
+        <button id = "BTN-${item.id}" onclick = "clickCard('${item?.category}')" class="border-2 py-4 px-14 rounded-3xl flex items-center justify-center">
                     <div class="w-10 h-10">
                         <img src="${item.category_icon}" alt="" class="w-full h-full">
                     </div>
@@ -250,9 +250,9 @@ function closeModal(id) {
   const allCards = document.querySelectorAll(".card");
   const adoptedPet = allCards[cardIndex];
   const adoptButton = adoptedPet.childNodes[3].childNodes[13].childNodes[1];
-  adoptButton.setAttribute("disabled", "true");
-  console.log(adoptButton.hasAttribute("disabled")); // Should log 'true'
   console.log(adoptButton);
+  adoptButton.setAttribute("disabled", true)
+ 
 }
 
 const loadModal = () => {
