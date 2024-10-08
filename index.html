@@ -1,338 +1,279 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment-6</title>
-    <script src="https://kit.fontawesome.com/34d0e0ea93.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/34d0e0ea93.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- link -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!--link  -->
 
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                color1: '#0E7A81',
-              }
-            }
-          }
-        }
-      </script>
-</head>
-<body>
-    
-<header class="w-10/12 mx-auto">
-    <nav class="py-6">
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              color1: "#0E7A81",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header class="w-10/12 mx-auto">
+      <nav class="py-6">
         <div class="navbar bg-base-100">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16" />
-                  </svg>
-                </div>
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                  <li><a>Home</a></li>
-                  <li>
-                    <a>Shop</a>
-                    
-                  </li>
-                  <li><a>Contact</a></li>
-                </ul>
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
               </div>
-              <!-- <a class="btn btn-ghost text-xl">daisyUI</a> -->
-              <div class="flex gap-3">
-              <img src="./images/logo.webp" alt="">
-              <h1 class="text-2xl font-bold">Peddy</h1>
-          </div>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
                 <li><a>Home</a></li>
                 <li>
-                    <summary>Shop</summary>
+                  <a>Shop</a>
                 </li>
                 <li><a>Contact</a></li>
               </ul>
             </div>
-            <div class="navbar-end">
-                <button class="border rounded-full py-2 px-3"><i class="fa-solid fa-user"></i></button>
+            <!-- <a class="btn btn-ghost text-xl">daisyUI</a> -->
+            <div class="flex gap-3">
+              <img src="./images/logo.webp" alt="" />
+              <h1 class="text-2xl font-bold">Peddy</h1>
             </div>
           </div>
-    </nav>
-
-
-
-    <!-- banner section start -->
-
-    <section>
-        <div class="text-center mt-7">
-            <h1 class="text-xl mb-3 text-gray-500 font-semibold">Bringing Families Together ❤️‍🔥 </h1>
-
-            <h1 class="md:text-4xl lg:text-7xl font-semibold text-2xl">
-            Your Path to Adoption 
-            <br><span class="">Starts Here</span>
-            </h1>
-
-            <div class="flex flex-col items-center">
-                
-            <p class="mt-10 font-semibold md:w-2/4 ">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
-
-            <a href="#main-container"class="bg-color1 py-3 px-5 text-white rounded-2xl mt-7 font-semibold" >View More</a>
-            </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li>
+                <summary>Shop</summary>
+              </li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <button class="border rounded-full py-2 px-3">
+              <i class="fa-solid fa-user"></i>
+            </button>
+          </div>
         </div>
+      </nav>
 
+      <!-- banner section start -->
+
+      <section>
+        <div class="text-center mt-7">
+          <h1 class="text-xl mb-3 text-gray-500 font-semibold">
+            Bringing Families Together ❤️‍🔥
+          </h1>
+
+          <h1 class="md:text-4xl lg:text-7xl font-semibold text-2xl">
+            Your Path to Adoption
+            <br /><span class="">Starts Here</span>
+          </h1>
+
+          <div class="flex flex-col items-center">
+            <p class="mt-10 font-semibold md:w-2/4">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout. The
+              point of using Lorem Ipsum is that it has a.
+            </p>
+
+            <a
+              href="#main-container"
+              class="bg-color1 py-3 px-5 text-white rounded-2xl mt-7 font-semibold"
+              >View More</a
+            >
+          </div>
+        </div>
 
         <div class="flex justify-center items-center">
-            <img src="./images/pet.webp" alt="">
+          <img src="./images/pet.webp" alt="" />
         </div>
-    </section>
+      </section>
 
-     <!-- banner section end -->
-    
-</header>
+      <!-- banner section end -->
+    </header>
 
-<main class="w-10/12 mx-auto mt-28" id="main-container">
-    <!-- main section ar banner -->
-    <div class="flex flex-col items-center mb-14">
-            <h1 class="md:text-5xl text-2xl  font-semibold">Adopt  Your  Best Friend</h1>
-                
-            <p class=" text-gray-500 md:w-2/4 text-center mt-5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
-    </div>
-    <!-- main section ar banner -->
+    <main class="w-10/12 mx-auto mt-28" id="main-container">
+      <!-- main section ar banner -->
+      <div class="flex flex-col items-center mb-14">
+        <h1 class="md:text-5xl text-2xl font-semibold">
+          Adopt Your Best Friend
+        </h1>
 
+        <p class="text-gray-500 md:w-2/4 text-center mt-5">
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout. The point of
+          using Lorem Ipsum is that it has a.
+        </p>
+      </div>
+      <!-- main section ar banner -->
 
-    <!-- animal button section start -->
+      <!-- animal button section start -->
 
-    <section class="mb-16 flex justify-center items-center" >
-        <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-6" id="btn-container">
-            
-                
-            
-        
-            
-        </div>
-    </section>
-<!-- animal button section end -->
+      <section class="mb-16 flex justify-center items-center">
+        <div
+          class="grid lg:grid-cols-4 md:grid-cols-2 gap-6"
+          id="btn-container"
+        ></div>
+      </section>
+      <!-- animal button section end -->
 
-<!-- sort button section start -->
+      <!-- sort button section start -->
 
-<section class="flex justify-between items-center mb-10 flex-col md:flex-row ">
-    <h1 class="md:text-2xl font-bold ">Best Deal For you</h1>
-    <button class="bg-color1 py-3 px-5 text-white rounded-2xl mt-7 font-semibold">
-        Sort by Price
-    </button>
-</section>
+      <section
+        class="flex justify-between items-center mb-10 flex-col md:flex-row"
+      >
+        <h1 class="md:text-2xl font-bold">Best Deal For you</h1>
+        <button
+          onclick="sortByPrice()"
+          class="bg-color1 py-3 px-5 text-white rounded-2xl mt-7 font-semibold"
+        >
+          Sort by Price
+        </button>
+      </section>
 
-<!-- sort button section end -->
+      <!-- sort button section end -->
 
+      <!-- main card section start -->
 
-
-<!-- main card section start -->
-
-<section>
-    <div class="grid grid-cols-12  gap-5">
-
-        <div class="lg:col-span-9 col-span-12">
-
-            <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-2 items-center justify-center" id="petCard_section">
-                
-             
-                    <!-- <div class="card card-compact bg-base-100 w-64 shadow-xl border-2">
-                        <figure>
-                          <div>
-                            <img
-                            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" class="p-2 rounded-2xl"
-                            alt="Shoes" /></div>
-                        </figure>
-
-                        <div class="card-body">
-                          <h2 class="card-title font-semibold">Mister Tartosh</h2>
-
-                          <div class="flex items-center gap-2">
-                            <img src="https://img.icons8.com/?size=24&id=115265&format=png" alt="">
-                            <h1 class="font-bold">Breed: Golder retriever</h1>
-                          </div>
-                          
-                          <div class="flex items-center gap-2">
-                            <img src="https://img.icons8.com/?size=24&id=85102&format=png" alt="">
-                            <h1 class="font-bold">Birth: 2024</h1>
-                          </div>
-
-                          <div class="flex items-center gap-2">
-                            <i class="fa-solid fa-venus"></i>
-                            <h1 class="font-bold">Gender: Female</h1>
-                          </div>
-                          <div class="flex items-center gap-2">
-                            <i class="fa-solid fa-dollar-sign"></i>
-                            <h1 class="font-bold">Price : 199$</h1>
-                          </div>
-
-                          <hr>
-
-
-                          <div class="flex items-center justify-center gap-2">
-                            <button class="border py-3 px-4 rounded-xl">
-                                <img src="https://img.icons8.com/?size=32&id=33481&format=png" alt="">
-                            </button >
-                            <button class="border py-3 px-4 rounded-xl text-color1 font-bold">
-                                Adopt
-                            </button>
-                            <button class="border py-3 px-4 rounded-xl text-color1 font-bold">
-                                Details
-                            </button>
-                          </div>
-                          
-                        </div>
-                      </div> -->
-
-               
+      <section>
+        <div class="grid grid-cols-12 gap-5">
+          <div class="lg:col-span-9 grid-cols-12">
+            <div
+              class="grid lg:grid-cols-3 grid-cols-1 gap-2 items-center justify-center"
+              id="petCard_section">
+              
             </div>
-           
-        </div>
-
-        <div class="lg:col-span-3">
-            <div class="grid grid-cols-2 gap-4 border-2 rounded-2xl py-7 px-5" id="inputImg">
-                
-
-            </div>
-        </div>
-    </div>
-</section>
-<!-- main card section end -->
-</main>
-
-
-<!-- Open the modal using ID.showModal() method -->
-<dialog id="my_modal_1" class="modal">
-  <div class="card card-compact bg-base-100 w-96 shadow-xl border-2">
-    <figure>
-      <figure>
-        <div>
-          <img
-          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" class="p-2 rounded-2xl"
-          alt="Shoes" /></div>
-      </figure>
-
-
-    </figure>
-
-    <div class="card-body">
-      <h2 class="card-title font-semibold" id="petName">Mister Tartosh</h2>
-
-     <div class="flex items-center gap-3">
-        <div class="flex items-center gap-2">
-            <img src="https://img.icons8.com/?size=24&id=115265&format=png" alt="">
-            <h1 class="font-bold" id="petBreed">Breed: Golder retriever</h1>
           </div>
+
+          <div class="lg:col-span-3">
+            <div
+              class="grid lg:grid-cols-2 grid-cols-1 gap-4 border-2 rounded-2xl py-7 px-5"
+              id="inputImg"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <!-- main card section end -->
+    </main>
+
+
+    <dialog id="my_modal_1" class="modal">
+      <div
+        class="card card-compact bg-base-100 w-96 shadow-xl border-2"
+        id="all_container"
+      >
+        <div id="modalContant">
           
-          <div class="flex items-center gap-2">
-            <img src="https://img.icons8.com/?size=24&id=85102&format=png" alt="">
-            <h1 class="font-bold" id="petBirth">Birth: 2024</h1>
-          </div>
-     </div>
-
-      <div class="flex items-center gap-20">
-        <div class="flex items-center gap-2">
-            <i class="fa-solid fa-venus"></i>
-            <h1 class="font-bold" id="petGender">Gender: Female</h1>
-          </div>
-          <div class="flex items-center gap-2">
-            <i class="fa-solid fa-dollar-sign"></i>
-            <h1 class="font-bold" id="petPrice">Price : 199$</h1>
-          </div>
+        </div>
       </div>
+    </dialog>
 
-      <div class="flex items-center gap-2">
-        <i class="fa-solid fa-venus"></i>
-        <h1 class="font-bold" id="petVaccinated">Vaccinated : Partially</h1>
+
+    <dialog id="castomModal" class="modal">
+      <div class="modal-box">
+        <h1 class="text-2xl mb-7 font-bold text-gray-400">Congrats</h1>
+        <h2>Adoption Process is start of your pet</h2>
+        <p class="p" id="countdownText">3</p>
+        <div class="modal-action">
+          <form method="dialog">
+
+            <button class="btn">Close</button>
+          </form>
+        </div>
       </div>
+    </dialog>
 
-      <hr>
-
-
-      <div class="mt-7">
-        <h1 class="font-bold">Details Information :</h1>
-
-        <p id="petDetails">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, dolorum! Necessitatibus quasi reprehenderit nobis suscipit velit voluptatibus adipisci officia officiis?</p>
-      </div>
-      <form method="dialog">
-        <button class="text-color1 font-bold w-11/12 mx-auto py-2 border-2 rounded-xl">Cancel</button>
-      </form>
-    </div>
-  </div>
-</dialog>
-
-
-
-
-
-<footer class="footer bg-black text-base-content p-10 mt-28">
-    <nav>
+    <footer class="footer bg-black text-base-content p-10 mt-28">
+      <nav>
         <div class="flex gap-3">
-            <img src="./images/logo.webp" alt="">
-            <h1 class="text-2xl font-bold">Peddy</h1>
+          <img src="./images/logo.webp" alt="" />
+          <h1 class="text-2xl font-bold">Peddy</h1>
         </div>
 
-      <h1 class="text-slate-500 font-semibold">Location: av. Washington 165, NY CA 54003
-        <br>
-        Phone: +31 85 964 47 25
-        <br>
-        Email: info@yourdomain.com <br>
-        Openings hours: 9.00 AM - 5.00 PM</h1>
-
+        <h1 class="text-slate-500 font-semibold">
+          Location: av. Washington 165, NY CA 54003
+          <br />
+          Phone: +31 85 964 47 25
+          <br />
+          Email: info@yourdomain.com <br />
+          Openings hours: 9.00 AM - 5.00 PM
+        </h1>
 
         <div class="flex gap-4 items-center">
-            <img src="https://img.icons8.com/?size=48&id=uLWV5A9vXIPu&format=png" alt="">
-            <img src="https://img.icons8.com/?size=48&id=ZNMifeqJbPRv&format=png" alt="">
-            <img src="https://img.icons8.com/?size=48&id=19318&format=png" alt="">
-            <img src="https://img.icons8.com/?size=48&id=Xy10Jcu1L2Su&format=png" alt="">
+          <img
+            src="https://img.icons8.com/?size=48&id=uLWV5A9vXIPu&format=png"
+            alt=""
+          />
+          <img
+            src="https://img.icons8.com/?size=48&id=ZNMifeqJbPRv&format=png"
+            alt=""
+          />
+          <img
+            src="https://img.icons8.com/?size=48&id=19318&format=png"
+            alt=""
+          />
+          <img
+            src="https://img.icons8.com/?size=48&id=Xy10Jcu1L2Su&format=png"
+            alt=""
+          />
         </div>
-    </nav>
-    <nav class="text-slate-500">
-      <h6 class="footer-title">Useful Links</h6>
-      <a class="link link-hover">Home</a>
-      <a class="link link-hover">About us</a>
-      <a class="link link-hover">Foundation</a>
-      <a class="link link-hover">Contact</a>
-    </nav>
-    <!-- <nav>
-      <h6 class="footer-title">Legal</h6>
-      <a class="link link-hover">Terms of use</a>
-      <a class="link link-hover">Privacy policy</a>
-      <a class="link link-hover">Cookie policy</a>
-    </nav> -->
-    <form>
-      <h6 class="footer-title text-slate-500">Drop a Message</h6>
-      <fieldset class="form-control w-80">
-        <div class="join">
-          <input
-            type="text"
-            placeholder="Enter Your Email"
-            class="py-3 px-7 rounded-2xl bg-gray-700 text-slate-600" />
-        </div>
-        
-      </fieldset>
-      <button class="bg-color1 py-3 px-20 rounded-2xl text-slate-600">Subscribe</button>
-    </form>
-  </footer>
+      </nav>
+      <nav class="text-slate-500">
+        <h6 class="footer-title">Useful Links</h6>
+        <a class="link link-hover">Home</a>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Foundation</a>
+        <a class="link link-hover">Contact</a>
+      </nav>
+     
+      <form>
+        <h6 class="footer-title text-slate-500">Drop a Message</h6>
+        <fieldset class="form-control w-80">
+          <div class="join">
+            <input
+              type="text"
+              placeholder="Enter Your Email"
+              class="py-3 px-7 rounded-2xl bg-gray-700 text-slate-600"
+            />
+          </div>
+        </fieldset>
+        <button class="bg-color1 py-3 px-20 rounded-2xl text-slate-600">
+          Subscribe
+        </button>
+      </form>
+    </footer>
 
-
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
