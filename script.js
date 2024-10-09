@@ -28,14 +28,12 @@ const displayCategories = (data) => {
 
 const clickCard = (category) => {
   const cardContainer = document.getElementById("petCard_section");
-// button active section start
+
   let buttons = document.querySelectorAll('button');
   buttons.forEach(button => button.classList.remove('active'));
   let clickedButton = event.currentTarget;
   clickedButton.classList.add('active');
-// button active section start
 
-  
   cardContainer.innerHTML = `<span class="loading loading-bars loading-lg"></span>`;
 
   
@@ -57,10 +55,16 @@ const clickCard = (category) => {
     .then((filteredPets) => {
    
       if (filteredPets.length === 0) {
-        cardContainer.innerHTML = `</p>
+        cardContainer.classList.remove("grid")
+
+        cardContainer.innerHTML = `<div class =" flex flex-col items-center justify-center">
         <img src="./images/error.webp" alt="not-found">
+       <h1 class="text-2xl font-bold text-black">No Information Available</h1>
+        </div>
+        
         `;
       } else {
+        cardContainer.classList.add("grid")
         displayCard(filteredPets); 
       }
     });
@@ -267,11 +271,6 @@ function closeModal(id) {
 }
   
 
-const loadModal = () => {
-  fetch("https://openapi.programming-hero.com/api/peddy/pets")
-    .then((res) => res.json())
-    .then((data) => disPlayModal(data.pets));
-};
 
 const likeImages = (img) => {
   let div = document.getElementById("inputImg");
