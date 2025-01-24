@@ -70,6 +70,7 @@ const clickCard = (category) => {
     });
 };
 
+
 const loadDetails = (pet_Id) => {
   const intId = parseInt(pet_Id);
   const petIndex = intId - 1;
@@ -230,6 +231,7 @@ const displayCard = (data) => {
   });
 };
 
+
 let countdownValue = 3;
 let countdownInterval;
 const castomModal2 = (id) => {
@@ -282,6 +284,7 @@ const likeImages = (img) => {
   `;
   div.append(imgSrc);
 };
+
 
 const sortByPrice = () => {
   fetch("https://openapi.programming-hero.com/api/peddy/pets")
